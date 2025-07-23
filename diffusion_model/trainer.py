@@ -26,6 +26,8 @@ import os
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
+# torch.Tensor.cuda = lambda self: self #ADDED 
+
 try:
     from apex import amp
     APEX_AVAILABLE = True
